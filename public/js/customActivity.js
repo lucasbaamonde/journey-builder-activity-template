@@ -44,8 +44,7 @@ define([
 
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
-                
-              
+                              
             });
         });
 
@@ -69,12 +68,14 @@ define([
         var postcardURLValue = $('#postcard-url').val();
         var postcardTextValue = $('#postcard-text').val();
 
+        /*
         payload['arguments'].execute.inArguments = [{
             "tokens": authTokens,
             "emailAddress": "{{Contact.Attribute.orderok.email}}",
             "iln": "{{Contact.Attribute.orderok.iln}}",
             "test2": "pepe2"
         }];
+        */
         
         payload['metaData'].isConfigured = true;
 

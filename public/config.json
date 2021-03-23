@@ -18,7 +18,9 @@
            "inArguments":[
 				{
                     "emailAddress": "{{Contact.Default.Email}}",
-                    "iln": "{{orderok.iln}}",
+                    "iln": "{{Contact.Attribute.orderok.iln}}",
+                    "firstName": "{{Contact.Attribute.orderok.firstName}}",
+                    "lastName": "{{Contact.Attribute.orderok.lastName}}",
                     "test": "pepe"
                 }									
 			],
