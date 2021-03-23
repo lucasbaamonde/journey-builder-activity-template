@@ -28,7 +28,7 @@
             "body": "",
             "header": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 10000
         }
     },
@@ -37,22 +37,22 @@
       "save": {
         "url": "https://marketing-salesforce-activity.travelagency.tech/activity/save",
           "verb": "POST",
-        "useJwt": true
+        "useJwt": false
        },
        "publish": {
         "url": "https://marketing-salesforce-activity.travelagency.tech/activity/publish",
            "verb": "POST",
-        "useJwt": true
+        "useJwt": false
        },
       "stop": {
         "url": "https://marketing-salesforce-activity.travelagency.tech/activity/stop",
            "verb": "POST",
-        "useJwt": true
+        "useJwt": false
       },
       "validate": {
         "url": "https://marketing-salesforce-activity.travelagency.tech/activity/validate",
         "verb": "POST",
-        "useJwt": true
+        "useJwt": false
       }
     },
     "wizardSteps": [
