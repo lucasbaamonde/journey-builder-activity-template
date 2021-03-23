@@ -17,11 +17,13 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
+                    "emailAddress": "{{Contact.Default.Email}}",
+                    "iln": "{{orderok.iln}}",
+                    "test": "pepe"
                 }									
 			],
           "outArguments": [],
-          "url": "https://<your-domain-here>/journeybuilder/execute",
+          "url": "https://marketing-salesforce-activity.travelagency.tech/activity/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -31,24 +33,24 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "__application_key_from_appcenter_here__",
+      "applicationExtensionKey": "76ec8f5b-c19c-4b41-98f6-51738616604f",
       "save": {
-        "url": "https://<your-domain-here>/journeybuilder/save",
+        "url": "https://marketing-salesforce-activity.travelagency.tech/activity/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://<your-domain-here>/journeybuilder/publish",
+        "url": "https://marketing-salesforce-activity.travelagency.tech/activity/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://<your-domain-here>/journeybuilder/stop",
+        "url": "https://marketing-salesforce-activity.travelagency.tech/activity/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://<your-domain-here>/journeybuilder/validate",
+        "url": "https://marketing-salesforce-activity.travelagency.tech/activity/validate",
         "verb": "POST",
         "useJwt": true
       }
